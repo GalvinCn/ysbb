@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Button from '@material-ui/core/Button';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+        <Button variant="contained">你好，世界</Button>
 
         <p className={styles.description}>
           Get started by editing{' '}
