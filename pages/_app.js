@@ -16,9 +16,7 @@ import client from "../apollo-client.js";
 const clientSideEmotionCache = createEmotionCache();
 
 export default function MyApp(props) {
-  const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
-   const { cats } = pageProps
-   console.log('1221 in _app cats', cats)
+  const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;  
 
   return (
     <CacheProvider value={emotionCache}>
