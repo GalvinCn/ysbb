@@ -59,12 +59,19 @@ const ResponsiveAppBar = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
-            variant="h6"
+            variant="h3"
             noWrap
             component="div"
-            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+            sx={{ mr: 2, 
+              display: { xs: 'none', md: 'flex' },
+              fontSize: {
+                lg: 45,
+                md: 38,
+                sm: 30,
+                xs: 18
+              } }}
           >
-             <a href='\'><img src={mediaItemUrl} style={{width: "48px", height: "48px"}} /></a>   
+             <a href='\'>  <img src={mediaItemUrl} style={{width: "48px", height: "48px"}} /><span>萍乡佑圣宝贝月子会所</span> </a>   
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -94,6 +101,7 @@ const ResponsiveAppBar = () => {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: 'block', md: 'none' },
+                
               }}
             >
               {links.map((link) => (
@@ -104,12 +112,20 @@ const ResponsiveAppBar = () => {
             </Menu>
           </Box>
           <Typography
-            variant="h6"
+            variant="h3"
             noWrap
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
+            sx={{ flexGrow: 1, 
+              display: { xs: 'flex', md: 'none' },
+              fontSize: {
+                lg: 45,
+                md: 38,
+                sm: 30,
+                xs: 18
+              }
+            }}
           >
-             <a href='\'> <img src={mediaItemUrl} style={{width: "48px", height: "48px"}} /> </a> 
+             <a href='\'>   <img src={mediaItemUrl} style={{width: "48px", height: "48px"}} /> <span style={{color: "purple", position: "relative", top: "-15px"}}>萍乡佑圣宝贝月子会所</span> </a> 
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {links.map((link) => (
