@@ -27,6 +27,8 @@ const theme = createMuiTheme({
   }
 });
 
+ 
+
 export default function MyApp(props) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;  
 

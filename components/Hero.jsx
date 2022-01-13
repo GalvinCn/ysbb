@@ -11,7 +11,7 @@ const useStyles = makeStyles({
     marginTop: 16,
     marginLeft: "auto",
     marginRight: "auto", 
-    zIndex: 999,
+    zIndex: 999,    
   }
 });
 
@@ -47,6 +47,12 @@ const Hero = ({imgSrc, imgAlt, title, subtitle} ) => {
                     sx={{
                     color: "secondary.main",
                     fontWeight: 400,
+                    fontSize: {
+                        lg: 60,
+                        md: 55,
+                        sm: 50,
+                        xs: 45
+                      }
                     }}
                 >
                     {title}
@@ -58,6 +64,12 @@ const Hero = ({imgSrc, imgAlt, title, subtitle} ) => {
                     color="common.white"
                     sx={{
                     mb: 10,
+                    fontSize: {
+                        lg: 45,
+                        md: 40,
+                        sm: 35,
+                        xs: 30
+                      }
                     }}
                 >
                     {subtitle}
