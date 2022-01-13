@@ -8,6 +8,7 @@ import Main  from "@components/MainContent.js"
 import Link from '@material-ui/core/Link'  
 import Image from 'next/image'  
 import ResponsiveAppBar from "@components/Appbar";
+import Footer from "@components/Footer"
 
 
 export default function Post({ post, cats }) {   
@@ -39,6 +40,7 @@ export default function Post({ post, cats }) {
                                               
                     </Grid>  
                 </Grid> 
+                <Footer />      
                 
             </Container> 
         </> 

@@ -7,6 +7,7 @@ import { Divider } from '@mui/material';
 //import Link from '@material-ui/core/Link'
 import Main from "../../components/MainList.js" 
 import ResponsiveAppBar from "@components/Appbar";
+import Footer from "@components/Footer"
 
 
 
@@ -24,7 +25,7 @@ export default function Category({ posts }) {
                           <Main title='管理制度' posts={posts} type='category' />  
                     </Grid>                     
                 </Grid> 
-                <hr /> <br />               
+                <Footer />              
             </Container>          
         </>
     )

@@ -5,12 +5,13 @@ import ClientOnly from "@components/ClientOnly";
 import { getPosts, getCategories } from "@lib/api";
 import ResponsiveAppBar from "@components/Appbar";
 import Footer from "@components/Footer"
+import Dashboard  from "@components/Dashboard/Dashboard";
 
 
-const AboutUsPage = () => {
+const dashboard = () => {
     return (
       <Container component="section" maxWidth="md" sx={{ mb: 15 }}>
-         <ResponsiveAppBar /> 
+          
       <Grid container spacing={3}>
          
         <Grid item xs={12} sm={12}
@@ -20,30 +21,14 @@ const AboutUsPage = () => {
             alignItems="center"
             marginTop="1rem"
         >
-            <Typography component="h2" variant="h4" textAlign="center" gutterBottom>
-                关于我们
-            </Typography>
-            <Typography variant="subtitle1" color="primary">
-                <ClientOnly>
-                    <ShowContent pageName = 'aboutus' />
-                </ClientOnly>  
-            </Typography> 
+           <Dashboard />
         </Grid>
         
       </Grid>
-      <Footer />
+      
     </Container>
     );
   };
   
-export default AboutUsPage;
+export default dashboard;
 
-export async function getServerSideProps(ctx) {
-  let posts = await getPosts();
-  let cats = await getCategories();
-  return {
-    props: {      
-      cats
-    }
-  }
-}

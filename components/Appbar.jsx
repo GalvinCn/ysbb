@@ -71,10 +71,10 @@ const ResponsiveAppBar = () => {
                 xs: 18
               } }}
           >
-             <a href='\'>  <img src={mediaItemUrl} style={{width: "48px", height: "48px"}} /><span>萍乡佑圣宝贝月子会所</span> </a>   
+             <a href='\'>  <img src={mediaItemUrl} style={{width: "48px", height: "48px"}} /><span style={{color: "purple"}}>萍乡佑圣宝贝月子会所</span> </a>   
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box   sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -127,7 +127,7 @@ const ResponsiveAppBar = () => {
           >
              <a href='\'>   <img src={mediaItemUrl} style={{width: "48px", height: "48px"}} /> <span style={{color: "purple", position: "relative", top: "-15px"}}>萍乡佑圣宝贝月子会所</span> </a> 
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box  justify="flex-end" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {links.map((link) => (
               <Button
                 key={link.label}
